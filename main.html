@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">  
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Consistency across platforms-->
+    <title>NinjaTurtleCanvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="total">
+    <p class="alternative-title">Ninja Turtle Canvas :)</p>
+    <canvas id="drawing-board"></canvas>
+    <div class="features">
+        <select id="brush-type">
+            <option value="pencil">Pencil</option>
+            <option value="marker">Marker</option>
+            <option value="eraser">Eraser</option>
+            <option value="spray">Spray</option>
+            <option value="highlighter">Highlighter</option>
+        </select>
+    
+
+        <input type="color" id="brush-color" value="#000000">
+    
+        <label for="brush-size">Size:</label>
+        <input type="number" id="brush-size" min="1" max="50" value="5">
+    
+        <button id="add-text">Text</button>
+        <button id="clear-canvas">Clear</button>
+        <button id="save-image">Save</button>
+        <button id="share-image">Share</button>
+        <button id="recognize">Recognize</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
